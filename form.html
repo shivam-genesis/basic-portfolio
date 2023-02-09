@@ -9,19 +9,28 @@
   <body>
     <h1>Fill your details here..</h1>
     <form action="enquiry.java" method="post">
-      <label>Name:</label>
-      <input type="text" name="personName" />
-      <br>
-      <br>
-      <label>Email:</label>
-      <input type="email" name="personEmail" />
+      <label for="name">Name:</label>
+      <input type="text" name="personName" id="name" />
       <br />
       <br />
-      <label>Query:</label>
-      <input type="text" name="personQuery" />
+      <label for="email">Email:</label>
+      <input type="email" name="personEmail" id="email" />
+      <br />
+      <br />
+      <label>Gender:</label>
+      <label for="male">Male</label>
+      <input type="radio" name="genderType" id="male"/>
+      <label for="female">Female</label>
+      <input type="radio" name="genderType" id="female"/>
+      <br />
+      <br />
+      <label for="query">Query:</label>
+      <br />
+      <textarea name="personQuery" cols="30" rows="10" id="query"></textarea>
       <br />
       <br />
       <input type="submit" value="Submit Now" />
+      <input type="reset" value="Reset Now" />
     </form>
     <h4>You will get reply shortly!!</h4>
   </body>
